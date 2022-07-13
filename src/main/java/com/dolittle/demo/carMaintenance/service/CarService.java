@@ -1,4 +1,4 @@
-package com.dolittle.demo.carMaintenance;
+package com.dolittle.demo.carMaintenance.service;
 
 import com.dolittle.demo.carMaintenance.model.CarTO;
 

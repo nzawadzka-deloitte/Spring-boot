@@ -1,4 +1,4 @@
-package com.dolittle.demo.carMaintenance;
+package com.dolittle.demo.carMaintenance.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
