@@ -1,4 +1,4 @@
-package com.dolittle.demo.model;
+package com.dolittle.demo.carMaintenance;
 
 import javax.persistence.*;
 

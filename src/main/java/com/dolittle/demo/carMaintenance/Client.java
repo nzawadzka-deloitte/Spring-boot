@@ -1,13 +1,14 @@
-package com.dolittle.demo.model;
+package com.dolittle.demo.carMaintenance;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.util.ArrayList;
+import javax.persistence.*;
+
 
 @SuppressWarnings("JpaAttributeTypeInspection")
 @Entity
 public class Client {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "client_id_generator")
+    @SequenceGenerator(name = "client_id_generator", sequenceName="client_id_sqe", allocationSize = 1)
     private Long id;
     private String name;
     private String lastname;
@@ -16,10 +17,10 @@ public class Client {
     private int phoneNumber;
     private String accountNumber;
 
-    private ArrayList<String> worker;
+
 
     protected Client(){}
-    public Client(Long id, String name, String lastname, String ciy, String dateOfbirth, int phoneNumber, String accountNumber, ArrayList<String> worker) {
+    public Client(Long id, String name, String lastname, String ciy, String dateOfbirth, int phoneNumber, String accountNumber) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
@@ -27,7 +28,7 @@ public class Client {
         this.dateOfbirth = dateOfbirth;
         this.phoneNumber = phoneNumber;
         this.accountNumber = accountNumber;
-        this.worker = worker;
+
     }
 
 
