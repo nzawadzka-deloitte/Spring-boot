@@ -2,6 +2,7 @@ package com.dolittle.demo.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import javax.persistence.*;
+import java.util.ArrayList;
 
 @Entity
 
@@ -18,6 +19,7 @@ public class Car {
     private float strenght;
     private int vehicleMileage;
 
+
     protected Car(){}
 
 
@@ -30,6 +32,7 @@ public class Car {
         this.engineCapacity=engineCapacity;
         this.strenght=strenght;
         this.vehicleMileage=vehicleMileage;
+
 
     }
 

@@ -12,14 +12,16 @@ public class CarRent {
     private String date;
     private String agencyTaken;
     private String agencyReturn;
+    private float price;
 
     protected CarRent(){}
 
-    public CarRent(Long id, String accountNumber, String date, String agencyTaken, String agencyReturn) {
+    public CarRent(Long id, String accountNumber, String date, String agencyTaken, String agencyReturn, float price) {
         this.id = id;
         this.accountNumber = accountNumber;
         this.date = date;
         this.agencyTaken = agencyTaken;
         this.agencyReturn = agencyReturn;
+        this.price = price;
     }
 }
