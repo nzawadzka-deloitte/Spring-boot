@@ -3,7 +3,7 @@ package com.dolittle.demo.carMaintenance;
 import javax.persistence.*;
 
 @Entity
-public class CarRent {
+public class CarRentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "carRent_id_generator")
     @SequenceGenerator(name = "carRent_id_generator", sequenceName="carRent_id_sqe", allocationSize = 1)
@@ -14,9 +14,9 @@ public class CarRent {
     private String agencyReturn;
     private float price;
 
-    protected CarRent(){}
+    protected CarRentEntity(){}
 
-    public CarRent(Long id, String accountNumber, String date, String agencyTaken, String agencyReturn, float price) {
+    public CarRentEntity(Long id, String accountNumber, String date, String agencyTaken, String agencyReturn, float price) {
         this.id = id;
         this.accountNumber = accountNumber;
         this.date = date;

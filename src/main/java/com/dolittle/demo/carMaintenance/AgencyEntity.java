@@ -3,7 +3,7 @@ package com.dolittle.demo.carMaintenance;
 import javax.persistence.*;
 
 @Entity
-public class Agency {
+public class AgencyEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "agency_id_generator")
     @SequenceGenerator(name = "agency_id_generator", sequenceName="agency_id_sqe", allocationSize = 1)
@@ -15,10 +15,10 @@ public class Agency {
     private int phoneNumber;
     private int numberOfWorkers;
 
-    protected Agency(){
+    protected AgencyEntity(){
 
     }
-    public Agency(Long id, String city, String postcode, String street, int streetNumber, int phoneNumber, int numberOfWorkers) {
+    public AgencyEntity(Long id, String city, String postcode, String street, int streetNumber, int phoneNumber, int numberOfWorkers) {
         this.id = id;
         this.city = city;
         this.postcode = postcode;

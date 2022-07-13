@@ -1,4 +1,4 @@
-package com.dolittle.carApp.carMaintenance.model;
+package com.dolittle.demo.carMaintenance.model;
 
 public class CarTO {
     private String model;

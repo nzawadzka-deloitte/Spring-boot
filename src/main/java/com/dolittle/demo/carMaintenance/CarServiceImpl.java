@@ -3,7 +3,8 @@ package com.dolittle.demo.carMaintenance;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.dolittle.carApp.carMaintenance.model.CarTO;
+
+import com.dolittle.demo.carMaintenance.model.CarTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

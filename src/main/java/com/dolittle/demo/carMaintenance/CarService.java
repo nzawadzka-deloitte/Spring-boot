@@ -1,8 +1,10 @@
 package com.dolittle.demo.carMaintenance;
 
+import com.dolittle.demo.carMaintenance.model.CarTO;
+
 import java.util.List;
 
-import com.dolittle.carApp.carMaintenance.model.CarTO;
+
 
 public interface CarService {
 

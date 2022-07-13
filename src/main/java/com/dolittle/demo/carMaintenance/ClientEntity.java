@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @SuppressWarnings("JpaAttributeTypeInspection")
 @Entity
-public class Client {
+public class ClientEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "client_id_generator")
     @SequenceGenerator(name = "client_id_generator", sequenceName="client_id_sqe", allocationSize = 1)
@@ -19,8 +19,8 @@ public class Client {
 
 
 
-    protected Client(){}
-    public Client(Long id, String name, String lastname, String ciy, String dateOfbirth, int phoneNumber, String accountNumber) {
+    protected ClientEntity(){}
+    public ClientEntity(Long id, String name, String lastname, String ciy, String dateOfbirth, int phoneNumber, String accountNumber) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
