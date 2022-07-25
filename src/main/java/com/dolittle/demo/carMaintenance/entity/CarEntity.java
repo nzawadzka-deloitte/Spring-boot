@@ -8,8 +8,14 @@ import java.util.ArrayList;
 
 public class CarEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "car_id_generator")
-    @SequenceGenerator(name = "car_id_generator", sequenceName="car_id_sqe", allocationSize = 1)
+    @SequenceGenerator(
+            name = "car_sequence",
+            sequenceName = "car_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.AUTO
+    )
     private Long id;
     private String model;
     private String name;
@@ -26,6 +32,17 @@ public class CarEntity {
 
 
 
+    public CarEntity(Long id, String type, String name, int yearOfProduction, String color, float engineCapacity, float strenght, int vehicleMileage, ArrayList<String> worker){
+        this.id = id;
+        this.model =type;
+        this.name=name;
+        this.yearOfProduction = yearOfProduction;
+        this.color=color;
+        this.engineCapacity=engineCapacity;
+        this.strenght=strenght;
+        this.vehicleMileage=vehicleMileage;
+        this.worker = worker;
+    }
     public CarEntity(String type, String name, int yearOfProduction, String color, float engineCapacity, float strenght, int vehicleMileage, ArrayList<String> worker){
         this.model =type;
         this.name=name;
@@ -35,7 +52,6 @@ public class CarEntity {
         this.strenght=strenght;
         this.vehicleMileage=vehicleMileage;
         this.worker = worker;
-
     }
 
     public Long getId() {
@@ -73,4 +89,7 @@ public class CarEntity {
     public ArrayList<String> getWorker() {
         return worker;
     }
+
+
+
 }
