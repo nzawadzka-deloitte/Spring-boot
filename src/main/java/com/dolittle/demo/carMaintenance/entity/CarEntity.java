@@ -90,6 +90,39 @@ public class CarEntity {
         return worker;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYearOfProduction(int yearOfProduction) {
+        this.yearOfProduction = yearOfProduction;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setEngineCapacity(float engineCapacity) {
+        this.engineCapacity = engineCapacity;
+    }
+
+    public void setStrenght(float strenght) {
+        this.strenght = strenght;
+    }
+
+    public void setVehicleMileage(int vehicleMileage) {
+        this.vehicleMileage = vehicleMileage;
+    }
+
+    public void setWorker(ArrayList<String> worker) {
+        this.worker = worker;
+    }
 }

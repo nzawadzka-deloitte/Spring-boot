@@ -4,7 +4,9 @@ import com.dolittle.demo.carMaintenance.entity.CarEntity;
 import com.dolittle.demo.carMaintenance.repository.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -36,3 +38,4 @@ public class CarService {
         carRepository.deleteById(id);
     }
 }
+
